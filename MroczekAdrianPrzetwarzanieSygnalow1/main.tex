@@ -1,0 +1,151 @@
+%----------------------- Wydruk dwustronny ---------------
+%\documentclass[12pt,twoside,a4paper]{book} % 
+%----------------------- Wydruk jednostronny ---------------
+%\documentclass[draft,12pt,oneside,a4paper]{book} % jednostronnego
+%opcja draft pozwala na szybką kompilację bez obrazków
+\documentclass[12pt,oneside,a4paper]{book} % jednostronnego
+%#################### packages############################
+\input{./packages.tex}   % w tym dokumencie deklarujemy potrzebne pakiety
+%#################### packages############################
+
+\input{./programming_python.tex} % definicja wyglądu kodu żródłowego 
+
+
+%-----------------właściwa część pracy-----------------
+
+\begin{document}
+%jak dokument jest duży dobrym pomysłem jest podział dokumentu na wiele plików %mozna to też zrobić z rozdziałami
+% \include{titlepage}
+
+%\thispagestyle{empty} \setcounter{page}{0} \tableofcontents
+
+
+
+\chapter{Mroczek Adrian - Zadanie nr. 1 }
+
+1. Zbadać układ bez wymuszenia. Wyznaczyć czas po którym odpowiedź swobodna układu nie przekracza 0.05 wartości początkowej.
+\chaptermark{Wzory...}
+\section{Wzory z zajęć}
+
+
+
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=0.7]{./images/wzorki_wstep.PNG} 
+\caption{\textit{Wstępne wzory}.\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+
+\section{Rozwiązanie}
+Dane do obliczeń:
+C=0.001
+R=1NNN, gdzie NNN to 3 ostatnie cyfry albumu (czyli jak np albumu kończy się na 045 to R=1045)
+Moje Dane do obliczeń:
+Nr albumu - 137980, z tego wynika ze R = 1980  
+
+% \subsection{Wzór klasyczny}
+
+
+
+
+% \thispagestyle{empty} \addcontentsline{toc}{chapter}{Wstęp}
+
+
+
+
+\subsection{Obliczenie alfa}
+
+\begin{figure}[h]
+\begin{center} 
+
+\includegraphics[scale=0.7]{./images/02.PNG}
+
+\caption{\textit{Wstępne wzory}.\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+\subsection{Reszta obliczeń}
+\begin{figure}[h]
+\begin{center} 
+
+\includegraphics[scale=0.5]{./images/01.PNG} 
+
+\caption{\textit{Wstępne wzory}.\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+% \begin{figure}[h]
+% \begin{center} 
+% \includegraphics[scale=0.7]{./images/02.PNG}
+% \caption{\textit{Wstępne wzory}.\newline }
+% %do spisy tresci wersja skrócona
+% \label{rys:logoup}
+% \end{center}
+% \end{figure}
+
+
+\chapter{Mroczek Adrian - Zadanie nr. 2 }
+
+2. Przyjąć że po tym czasie odpowiedź swobodna zanikła i badać dalej tylko część
+odpowiedzi wymuszeniowej. Zbadać zależność amplitudy q(t) oraz i(t) w zależności
+od częstości wymuszenia w przedziale (0.1,10)..Wykonać wykres A(w). Oś częstości przedstawić w skali logarytmicznej
+o podstawie 10. Wyznaczenie maksimum funkcji można wykonać przez tablicowanie funkcji z małym krokiem.
+
+\chaptermark{Wzory...}
+\section{Niech u(t) = C * sin(wt)}
+
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=0.5]{./images/001.PNG} 
+\caption{\textit{Wstępne wzory}.\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=0.8]{./images/czestosc=10.PNG} 
+\caption{\textit{Badanie dla częstości = 10}.\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=0.8]{./images/czestosc=50.PNG} 
+\caption{\textit{Badanie dla częstości = 50}.\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=0.6]{./images/002.PNG} 
+\caption{\textit{Python code}.\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+
+\chapter{Linki }
+
+https://forbot.pl/blog/czym-jest-filtr-rc-jak-dziala-i-co-warto-o-nim-wiedziec-id40448 
+https://www.overleaf.com/read/yqmpndscsjts 
+
+\end{document}
