@@ -1,0 +1,227 @@
+%----------------------- Wydruk dwustronny ---------------
+%\documentclass[12pt,twoside,a4paper]{book} % 
+%----------------------- Wydruk jednostronny ---------------
+%\documentclass[draft,12pt,oneside,a4paper]{book} % jednostronnego
+%opcja draft pozwala na szybką kompilację bez obrazków
+\documentclass[12pt,oneside,a4paper]{book} % jednostronnego
+%#################### packages############################
+\input{./packages.tex}   % w tym dokumencie deklarujemy potrzebne pakiety
+%#################### packages############################
+
+\input{./programming_python.tex} % definicja wyglądu kodu żródłowego 
+
+
+%-----------------właściwa część pracy-----------------
+
+\begin{document}
+%jak dokument jest duży dobrym pomysłem jest podział dokumentu na wiele plików %mozna to też zrobić z rozdziałami
+% \include{titlepage}
+
+%\thispagestyle{empty} \setcounter{page}{0} \tableofcontents
+
+
+
+\chapter{Mroczek Adrian - Zadanie nr. 2 Fourier }
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=1]{./images/02.PNG} 
+\caption{\textit{Przypis parametru do numeru albumu}.\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=0.9]{./images/ZadanieSyganly.PNG} 
+\caption{\textit{Zadanie Fourier}.\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+\chaptermark{Wzory...}
+
+% Dane do obliczeń:\newline
+% C=0.001
+% R=1NNN, gdzie NNN to 3 ostatnie cyfry albumu (czyli jak np albumu kończy się na 045 to R=1045).\newline
+% Moje Dane do obliczeń:\newline
+% Nr albumu = 137980, z tego wynika ze R = 1980.  
+
+% \subsection{Wzór klasyczny}
+
+
+% fsdf
+
+% \thispagestyle{empty} \addcontentsline{toc}{chapter}{Wstęp}
+
+
+
+
+% % \subsection{Obliczenie alfa}
+
+% \begin{figure}[h]
+% \begin{center} 
+
+% \includegraphics[scale=0.7]{./images/02.PNG}
+
+% \caption{\textit{Wstępne obliczenie alfa}.\newline }
+% %do spisy tresci wersja skrócona
+% \label{rys:logoup}
+% \end{center}
+% \end{figure}
+
+% % \subsection{Reszta obliczeń}
+% \begin{figure}[h]
+% \begin{center} 
+
+% \includegraphics[scale=0.5]{./images/01.PNG} 
+
+% \caption{\textit{Obliczenia}.\newline }
+% %do spisy tresci wersja skrócona
+% \label{rys:logoup}
+% \end{center}
+% \end{figure}
+
+% \begin{figure}[h]
+% \begin{center} 
+% \includegraphics[scale=0.7]{./images/02.PNG}
+% \caption{\textit{Wstępne wzory}.\newline }
+% %do spisy tresci wersja skrócona
+% \label{rys:logoup}
+% \end{center}
+% \end{figure}
+
+
+\chapter{Mroczek Adrian - Rozwiazanie A  }
+% \section{Dane do zadania}
+% Nr albumu = 137 980   p = 1,240
+
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=0.7]{./images/RozwiazanieA.PNG} 
+\caption{\textit{Kod w pythonie z komentarzem.}\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+
+% \section{Rozwiązanie}
+% % 2. Przyjąć że po tym czasie odpowiedź swobodna zanikła i badać dalej tylko część
+% % odpowiedzi wymuszeniowej. Zbadać zależność amplitudy q(t) oraz i(t) w zależności
+% % od częstości wymuszenia w przedziale (0.1,10)..Wykonać wykres A(w). Oś częstości przedstawić w skali logarytmicznej
+% % o podstawie 10. Wyznaczenie maksimum funkcji można wykonać przez tablicowanie funkcji z małym krokiem.
+
+% \chaptermark{Wzory...}
+% % \section{Niech u(t) = C * sin(wt)}
+
+
+% \begin{figure}[h]
+% \begin{center} 
+% \includegraphics[scale=0.7]{./images/001.PNG} 
+% \caption{\textit{Suma drgań własnych (które wygasają po czasie 5.93s) oraz odpowiedzi układu po ustabilizowaniu się}.\newline }
+% %do spisy tresci wersja skrócona
+% \label{rys:logoup}
+% \end{center}
+% \end{figure}
+
+
+% \begin{figure}[h]
+% \begin{center} 
+% \includegraphics[scale=0.8]{./images/czestosc=10.PNG} 
+% \caption{\textit{Badanie dla częstości = 10}.\newline }
+% %do spisy tresci wersja skrócona
+% \label{rys:logoup}
+% \end{center}
+% \end{figure}
+
+
+% \begin{figure}[h]
+% \begin{center} 
+% \includegraphics[scale=0.8]{./images/czestosc=50.PNG} 
+% \caption{\textit{Badanie dla częstości = 50}.\newline }
+% %do spisy tresci wersja skrócona
+% \label{rys:logoup}
+% \end{center}
+% \end{figure}
+
+
+% \begin{figure}[h]
+% \begin{center} 
+% \includegraphics[scale=0.6]{./images/002.PNG} 
+% \caption{\textit{Python code}.\newline }
+% %do spisy tresci wersja skrócona
+% \label{rys:logoup}
+% \end{center}
+% \end{figure}
+
+\chapter{Mroczek Adrian - Rozwiazanie B  }
+
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=0.65]{./images/01a.PNG} 
+\caption{\textit{Wyznaczanie równań do równania z trzema niewiadomymi cz1. }\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=0.65]{./images/02a.PNG} 
+\caption{\textit{Wyznaczanie równań do równania z trzema niewiadomymi cz2.}\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=0.65]{./images/03a.PNG} 
+\caption{\textit{Wyznaczanie równań do równania z trzema niewiadomymi cz3.}\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=1.5]{./images/04a.PNG} 
+\caption{\textit{Podsumowanie wyników powyższych obliczeń.}.\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=0.6]{./images/05a.PNG} 
+\caption{\textit{Obliczenie wspólczynników A,B,C }.\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[scale=1.2]{./images/06a.PNG} 
+\caption{\textit{Sprawdzenie dokładności znalezionego rozwiązania poprzeż narysowanie obu funkcji z użyciem języka Python. }\newline }
+%do spisy tresci wersja skrócona
+\label{rys:logoup}
+\end{center}
+\end{figure}
+
+
+\chapter{Linki }
+
+https://www.overleaf.com/read/qwpxdjkkkkqv \newline
+https://github.com/mroczek-adrian/MroczekAdrianPrzetwarzanieSygnalow \newline
+https://www.wolframalpha.com/  \newline
+
+\end{document}
